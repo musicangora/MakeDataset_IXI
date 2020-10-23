@@ -1,0 +1,2 @@
+# MakeDataset_IXI
+IXI Datasetをpi2pixやCycleGANで利用できる形に変換するツール

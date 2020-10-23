@@ -8,14 +8,14 @@ IXI Datasetをpi2pixやCycleGANで利用できる形に変換するツール
 
 ## 処理内容
 ### データの展開
-Google DriveにアップローダされたデータをGoogle Colab上に展開する。
-
-展開したデータのうち、データセットに含める例をさらに展開する。
+Google DriveにアップローダされたデータをGoogle Colab上に展開する。展開したデータのうち、データセットに含める例をさらに展開する。
 
 ### pix2pix用の処理
-[![Image from Gyazo](https://i.gyazo.com/27b4dcff32749be36a1cd5c6972ddc41.png)](https://gyazo.com/27b4dcff32749be36a1cd5c6972ddc41)
+<a href="https://www.kaggle.com/vikramtiwari/pix2pix-dataset">
+  <img src="https://i.gyazo.com/27b4dcff32749be36a1cd5c6972ddc41.png" width="320" align="center" />
+</a>
 バークレー校が配布している[pix2pix/dataset](https://people.eecs.berkeley.edu/~tinghuiz/projects/pix2pix/datasets/)のデータセットは、変換前の画像と変換後の画像が、1枚の画像の左右でペアになっている。このようになるようにT2画像とPD画像をconcatenateし、ペア画像を作成する。
-[![Image from Gyazo](https://i.gyazo.com/f26a7426587f906f55d33c7371057f7c.png)](https://gyazo.com/f26a7426587f906f55d33c7371057f7c)
+![Image from Gyazo](https://i.gyazo.com/f26a7426587f906f55d33c7371057f7c.png)
 
 ### 画像の保存
 .h5ファイルとして、読み込んだMRIの画像データを保存する。T2PDグループ内にtrain、testデータセットとして画像データを格納している。

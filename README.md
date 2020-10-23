@@ -12,10 +12,12 @@ Google DriveにアップローダされたデータをGoogle Colab上に展開�
 
 ### pix2pix用の処理
 <a href="https://www.kaggle.com/vikramtiwari/pix2pix-dataset">
-  <img src="https://i.gyazo.com/27b4dcff32749be36a1cd5c6972ddc41.png" width="320" align="center" />
+  <img src="https://i.gyazo.com/27b4dcff32749be36a1cd5c6972ddc41.png" width="320" />
 </a>
+
 バークレー校が配布している[pix2pix/dataset](https://people.eecs.berkeley.edu/~tinghuiz/projects/pix2pix/datasets/)のデータセットは、変換前の画像と変換後の画像が、1枚の画像の左右でペアになっている。このようになるようにT2画像とPD画像をconcatenateし、ペア画像を作成する。
-![Image from Gyazo](https://i.gyazo.com/f26a7426587f906f55d33c7371057f7c.png)
+
+<img src="https://i.gyazo.com/f26a7426587f906f55d33c7371057f7c.png" width="320" />
 
 ### 画像の保存
 .h5ファイルとして、読み込んだMRIの画像データを保存する。T2PDグループ内にtrain、testデータセットとして画像データを格納している。

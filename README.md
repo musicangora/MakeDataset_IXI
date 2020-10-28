@@ -20,4 +20,25 @@ Google DriveにアップローダされたデータをGoogle Colab上に展開�
 <img src="https://i.gyazo.com/f26a7426587f906f55d33c7371057f7c.png" width="320" />
 
 ### 画像の保存
-.h5ファイルとして、読み込んだMRIの画像データを保存する。T2PDグループ内にtrain、testデータセットとして画像データを格納している。
+16bit の.tiffファイルとして、読み込んだMRIの画像データを保存する。
+#### pix2pixでのディレクトリ構成
+``` 
+T2PD_pix2pix/
+        ├ test/
+        │  └ 136files
+        └ train/
+            └ 358files
+```
+
+#### CycleGANでのディレクトリ構成
+```
+T2PD_cyclegan/
+    ├ trainA/
+    │    └ T2 image 358files
+    ├ testA/
+    │    └ T2 image 136files
+    ├ trainB/
+    │    └ PD image 358files
+    └ testB/
+         └ PD image 136files
+```
